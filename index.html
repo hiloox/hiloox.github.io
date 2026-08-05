@@ -11,10 +11,11 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="logo-full.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/png" href="logo-icon.png">
+<link rel="icon" type="image/png" href="icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Hiloox Private Limited","email":"hello@hiloox.com","slogan":"Hello, Powered by AI.","address":{"@type":"PostalAddress","streetAddress":"Joseph Avenue, A20/153, M.S. Road, Krishancoil","addressLocality":"Nagercoil","addressRegion":"Tamil Nadu","postalCode":"629001","addressCountry":"IN"}}
 </script>
@@ -297,7 +298,7 @@ section{position:relative;padding:96px 0}
 .product-list li svg{width:16px;height:16px;color:var(--cyan);flex-shrink:0}
 .product-anim{
   border-radius:var(--r-md);background:var(--bg-soft);border:1px solid var(--border-soft);
-  padding:20px;margin-bottom:26px;min-height:130px;display:flex;align-items:center;justify-content:center;
+  padding:20px;margin-bottom:26px;height:290px;overflow:hidden;display:flex;align-items:center;justify-content:center;
 }
 .product-card .btn{margin-top:auto;align-self:flex-start}
 /* phone waveform — a calm symmetric equalizer shape (fixed heights that
@@ -592,7 +593,7 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
 </style>
 </head>
 <body data-theme-root>
-<!-- SVG ICON SPRITE -->
+<!-- SHARED GRADIENT DEF (used by the flow diagram) -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <!-- userSpaceOnUse (not objectBoundingBox) so it still paints straight,
@@ -602,49 +603,6 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
       <stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#06B6D4"/>
     </linearGradient>
   </defs>
-  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6L9 17l-5-5"/></symbol>
-  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
-  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
-  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
-  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 6v6l4 2"/></symbol>
-  <symbol id="i-mic" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3zM19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/></symbol>
-  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
-  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
-  <symbol id="i-plug" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-6 6 6 6 0 0 1-6-6V8zM12 18v4"/></symbol>
-  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16 2v4M8 2v4M3 10h18"/></symbol>
-  <symbol id="i-users" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
-  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
-  <symbol id="i-send" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></symbol>
-  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/></symbol>
-  <symbol id="i-book" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15z"/></symbol>
-  <symbol id="i-zap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
-  <symbol id="i-api" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></symbol>
-  <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
-  <symbol id="i-doc" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></symbol>
-  <symbol id="i-repeat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M17 1l4 4-4 4"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3"/></symbol>
-  <symbol id="i-card" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M1 10h22"/></symbol>
-  <symbol id="i-brain" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2a4 4 0 0 0-4 4 4 4 0 0 0-3 6.5A4 4 0 0 0 6 20a4 4 0 0 0 6 1.5A4 4 0 0 0 18 20a4 4 0 0 0 1-7.5A4 4 0 0 0 16 6a4 4 0 0 0-4-4z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 2v19.5"/></symbol>
-  <symbol id="i-chart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M18 20V10M12 20V4M6 20v-6"/></symbol>
-  <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M8 21h8M12 17v4"/></symbol>
-  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
-  <symbol id="i-key" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></symbol>
-  <symbol id="i-history" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 3v5h5M3.05 13A9 9 0 1 0 6 5.3L3 8"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 7v5l4 2"/></symbol>
-  <symbol id="i-record" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="currentColor"/></symbol>
-  <symbol id="i-layers" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 6l-10 7L2 6"/></symbol>
-  <symbol id="i-sms" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M8 10h.01M12 10h.01M16 10h.01"/></symbol>
-  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
-  <symbol id="i-sheet" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M3 9h18M3 15h18M9 3v18M15 3v18"/></symbol>
-  <symbol id="i-webhook" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 1 1 2.98 17M9.83 8.24A4 4 0 1 1 16.9 8.9l-2.9 5.07M14.31 16.5A4 4 0 1 0 18 11l-3-5.2"/></symbol>
-  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol>
-  <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
-  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></symbol>
-  <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
-  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M3 6h18M3 12h18M3 18h18"/></symbol>
-  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2" fill="currentColor"/></symbol>
-  <symbol id="i-x" viewBox="0 0 24 24"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L1 2h6.5l4.4 5.9L18.9 2zm-1.1 18h1.7L7.4 3.9H5.6L17.8 20z"/></symbol>
-  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/></symbol>
-  <symbol id="i-youtube" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><path fill="currentColor" d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z"/></symbol>
 </svg>
 
 <!-- NAV -->
@@ -663,12 +621,12 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
     </ul>
     <div class="nav-actions">
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-        <svg class="icon-moon"><use href="#i-moon"/></svg>
-        <svg class="icon-sun"><use href="#i-sun"/></svg>
+        <i class="fa-solid fa-moon icon-moon"></i>
+        <i class="fa-solid fa-sun icon-sun"></i>
       </button>
       <a href="#cta" class="btn btn-primary nav-cta">Get Started</a>
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-        <svg><use href="#i-menu"/></svg>
+        <i class="fa-solid fa-bars"></i>
       </button>
     </div>
   </div>
@@ -694,7 +652,7 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
       <h1 class="reveal reveal-d1">AI Agents That <span class="grad-text">Never Miss</span> a Conversation.</h1>
       <p class="reveal reveal-d2">Deploy intelligent AI voice and WhatsApp agents that answer customers instantly, automate conversations, qualify leads, provide support, and work 24/7.</p>
       <div class="hero-ctas reveal reveal-d3">
-        <a href="#cta" class="btn btn-primary">Get Started <svg><use href="#i-arrow"/></svg></a>
+        <a href="#cta" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
         <a href="#cta" class="btn btn-ghost">Book a Demo</a>
       </div>
       <div class="hero-stats reveal reveal-d4">
@@ -780,11 +738,11 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
 <section aria-label="Why businesses trust Hiloox" style="padding-top:0">
   <div class="container">
     <div class="trust-grid">
-      <div class="trust-card reveal"><div class="trust-icon"><svg><use href="#i-clock"/></svg></div><h3>24/7 Availability</h3></div>
-      <div class="trust-card reveal reveal-d1"><div class="trust-icon"><svg><use href="#i-mic"/></svg></div><h3>Human-like Conversations</h3></div>
-      <div class="trust-card reveal reveal-d2"><div class="trust-icon"><svg><use href="#i-globe"/></svg></div><h3>Multi-language Support</h3></div>
-      <div class="trust-card reveal reveal-d3"><div class="trust-icon"><svg><use href="#i-shield"/></svg></div><h3>Secure Cloud Infrastructure</h3></div>
-      <div class="trust-card reveal reveal-d4"><div class="trust-icon"><svg><use href="#i-plug"/></svg></div><h3>Easy Integrations</h3></div>
+      <div class="trust-card reveal"><div class="trust-icon"><i class="fa-solid fa-clock"></i></div><h3>24/7 Availability</h3></div>
+      <div class="trust-card reveal reveal-d1"><div class="trust-icon"><i class="fa-solid fa-microphone"></i></div><h3>Human-like Conversations</h3></div>
+      <div class="trust-card reveal reveal-d2"><div class="trust-icon"><i class="fa-solid fa-globe"></i></div><h3>Multi-language Support</h3></div>
+      <div class="trust-card reveal reveal-d3"><div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div><h3>Secure Cloud Infrastructure</h3></div>
+      <div class="trust-card reveal reveal-d4"><div class="trust-icon"><i class="fa-solid fa-plug"></i></div><h3>Easy Integrations</h3></div>
     </div>
   </div>
 </section>
@@ -799,7 +757,7 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
     </div>
     <div class="products-grid">
       <article class="product-card reveal">
-        <div class="product-icon"><svg><use href="#i-phone"/></svg></div>
+        <div class="product-icon"><i class="fa-solid fa-phone"></i></div>
         <h3>AI Phone Agent</h3>
         <p>A voice agent that answers and makes calls with natural, real-time conversation.</p>
         <div class="product-anim">
@@ -808,36 +766,36 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
           </div>
         </div>
         <ul class="product-list">
-          <li><svg><use href="#i-check"/></svg>Inbound Calling</li>
-          <li><svg><use href="#i-check"/></svg>Outbound Calling</li>
-          <li><svg><use href="#i-check"/></svg>Appointment Booking</li>
-          <li><svg><use href="#i-check"/></svg>Lead Qualification</li>
-          <li><svg><use href="#i-check"/></svg>Customer Support</li>
-          <li><svg><use href="#i-check"/></svg>Call Summaries</li>
-          <li><svg><use href="#i-check"/></svg>Webhook Integrations</li>
-          <li><svg><use href="#i-check"/></svg>CRM Updates</li>
-          <li><svg><use href="#i-check"/></svg>Real-time Responses</li>
+          <li><i class="fa-solid fa-check"></i>Inbound Calling</li>
+          <li><i class="fa-solid fa-check"></i>Outbound Calling</li>
+          <li><i class="fa-solid fa-check"></i>Appointment Booking</li>
+          <li><i class="fa-solid fa-check"></i>Lead Qualification</li>
+          <li><i class="fa-solid fa-check"></i>Customer Support</li>
+          <li><i class="fa-solid fa-check"></i>Call Summaries</li>
+          <li><i class="fa-solid fa-check"></i>Webhook Integrations</li>
+          <li><i class="fa-solid fa-check"></i>CRM Updates</li>
+          <li><i class="fa-solid fa-check"></i>Real-time Responses</li>
         </ul>
-        <a href="#cta" class="btn btn-ghost">Learn More <svg><use href="#i-arrow"/></svg></a>
+        <a href="#cta" class="btn btn-ghost">Learn More <i class="fa-solid fa-arrow-right"></i></a>
       </article>
       <article class="product-card reveal reveal-d2">
-        <div class="product-icon"><svg><use href="#i-chat"/></svg></div>
+        <div class="product-icon"><i class="fa-solid fa-comment-dots"></i></div>
         <h3>AI WhatsApp Agent</h3>
         <p>An always-on messaging agent that replies instantly and moves every chat forward.</p>
         <div class="product-anim">
           <div class="chat-demo" id="chatDemo" aria-hidden="true"></div>
         </div>
         <ul class="product-list">
-          <li><svg><use href="#i-check"/></svg>Instant Replies</li>
-          <li><svg><use href="#i-check"/></svg>Lead Capture</li>
-          <li><svg><use href="#i-check"/></svg>Order Tracking</li>
-          <li><svg><use href="#i-check"/></svg>Appointment Booking</li>
-          <li><svg><use href="#i-check"/></svg>Broadcast Messages</li>
-          <li><svg><use href="#i-check"/></svg>Rich Media Support</li>
-          <li><svg><use href="#i-check"/></svg>Knowledge Base Answers</li>
-          <li><svg><use href="#i-check"/></svg>Workflow Automation</li>
+          <li><i class="fa-solid fa-check"></i>Instant Replies</li>
+          <li><i class="fa-solid fa-check"></i>Lead Capture</li>
+          <li><i class="fa-solid fa-check"></i>Order Tracking</li>
+          <li><i class="fa-solid fa-check"></i>Appointment Booking</li>
+          <li><i class="fa-solid fa-check"></i>Broadcast Messages</li>
+          <li><i class="fa-solid fa-check"></i>Rich Media Support</li>
+          <li><i class="fa-solid fa-check"></i>Knowledge Base Answers</li>
+          <li><i class="fa-solid fa-check"></i>Workflow Automation</li>
         </ul>
-        <a href="#cta" class="btn btn-ghost">Learn More <svg><use href="#i-arrow"/></svg></a>
+        <a href="#cta" class="btn btn-ghost">Learn More <i class="fa-solid fa-arrow-right"></i></a>
       </article>
     </div>
   </div>
@@ -851,7 +809,7 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
       <p>From setup to your first AI-handled conversation in four simple steps.</p>
     </div>
     <div class="steps">
-      <div class="step reveal"><div class="step-num">1</div><h3>Choose Your AI Agent</h3><p>Pick a phone agent, a WhatsApp agent, or deploy both together.</p></div>
+      <div class="step reveal"><div class="step-num">1</div><h3>Choose Your AI Agent</h3><p>Pick a phone agent or WhatsApp agent.</p></div>
       <div class="step reveal reveal-d1"><div class="step-num">2</div><h3>Configure Tasks &amp; Knowledge</h3><p>Define what your agent does and connect your knowledge base.</p></div>
       <div class="step reveal reveal-d2"><div class="step-num">3</div><h3>Connect Phone or WhatsApp</h3><p>Link your phone number or WhatsApp Business account securely.</p></div>
       <div class="step reveal reveal-d3"><div class="step-num">4</div><h3>Go Live in Minutes</h3><p>Your agent starts answering customers instantly, around the clock.</p></div>
@@ -868,22 +826,22 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
       <p>One agent, dozens of jobs. Trained on your business, working for your customers.</p>
     </div>
     <div class="cap-grid">
-      <div class="cap-card reveal"><svg><use href="#i-help"/></svg><span>Answer customer queries</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-calendar"/></svg><span>Book appointments</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-target"/></svg><span>Capture leads</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-doc"/></svg><span>Collect customer information</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-users"/></svg><span>Qualify prospects</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-send"/></svg><span>Send follow-up messages</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-sms"/></svg><span>Handle FAQs</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-repeat"/></svg><span>Escalate to humans</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-book"/></svg><span>Read from knowledge base</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-phone"/></svg><span>Call customers automatically</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-chat"/></svg><span>Respond on WhatsApp</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-zap"/></svg><span>Trigger external APIs</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-db"/></svg><span>Integrate with CRMs</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-doc"/></svg><span>Generate conversation summaries</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-clock"/></svg><span>Schedule callbacks</span></div>
-      <div class="cap-card reveal"><svg><use href="#i-card"/></svg><span>Collect payments <small style="color:var(--text-3)">(future ready)</small></span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-circle-question"></i><span>Answer customer queries</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-calendar-days"></i><span>Book appointments</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-bullseye"></i><span>Capture leads</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-file-lines"></i><span>Collect customer information</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-users"></i><span>Qualify prospects</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-paper-plane"></i><span>Send follow-up messages</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-comment-sms"></i><span>Handle FAQs</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-rotate"></i><span>Escalate to humans</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-book"></i><span>Read from knowledge base</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-phone"></i><span>Call customers automatically</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-comment-dots"></i><span>Respond on WhatsApp</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-bolt"></i><span>Trigger external APIs</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-database"></i><span>Integrate with CRMs</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-file-lines"></i><span>Generate conversation summaries</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-clock"></i><span>Schedule callbacks</span></div>
+      <div class="cap-card reveal"><i class="fa-solid fa-credit-card"></i><span>Collect payments <small style="color:var(--text-3)">(future ready)</small></span></div>
     </div>
   </div>
 </section>
@@ -897,18 +855,18 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
       <p>Everything you need to run AI conversations at scale — securely and reliably.</p>
     </div>
     <div class="features-grid">
-      <div class="feature-card reveal"><div class="feature-icon"><svg><use href="#i-mic"/></svg></div><h3>Natural AI Conversations</h3><p>Human-like voice and chat that understands intent and context.</p></div>
-      <div class="feature-card reveal reveal-d1"><div class="feature-icon"><svg><use href="#i-zap"/></svg></div><h3>Ultra Low Latency</h3><p>Sub-second responses that keep conversations flowing naturally.</p></div>
-      <div class="feature-card reveal reveal-d2"><div class="feature-icon"><svg><use href="#i-brain"/></svg></div><h3>Context Awareness</h3><p>Remembers the full conversation to respond with precision.</p></div>
-      <div class="feature-card reveal reveal-d3"><div class="feature-icon"><svg><use href="#i-globe"/></svg></div><h3>Multi-language Support</h3><p>Serve customers fluently in 30+ languages, automatically.</p></div>
-      <div class="feature-card reveal"><div class="feature-icon"><svg><use href="#i-chart"/></svg></div><h3>Real-time Analytics</h3><p>Track calls, chats, outcomes, and performance as they happen.</p></div>
-      <div class="feature-card reveal reveal-d1"><div class="feature-icon"><svg><use href="#i-webhook"/></svg></div><h3>Webhook Integration</h3><p>Push events to any system the moment they occur.</p></div>
-      <div class="feature-card reveal reveal-d2"><div class="feature-icon"><svg><use href="#i-book"/></svg></div><h3>Custom Knowledge Base</h3><p>Ground every answer in your own docs, FAQs, and policies.</p></div>
-      <div class="feature-card reveal reveal-d3"><div class="feature-icon"><svg><use href="#i-record"/></svg></div><h3>Call Recording</h3><p>Every call recorded and searchable for quality and compliance.</p></div>
-      <div class="feature-card reveal"><div class="feature-icon"><svg><use href="#i-history"/></svg></div><h3>Conversation History</h3><p>Complete transcripts and timelines for every interaction.</p></div>
-      <div class="feature-card reveal reveal-d1"><div class="feature-icon"><svg><use href="#i-monitor"/></svg></div><h3>Live Dashboard</h3><p>Monitor agents, conversations, and metrics in one place.</p></div>
-      <div class="feature-card reveal reveal-d2"><div class="feature-icon"><svg><use href="#i-lock"/></svg></div><h3>Secure Cloud Deployment</h3><p>Encrypted in transit and at rest on hardened infrastructure.</p></div>
-      <div class="feature-card reveal reveal-d3"><div class="feature-icon"><svg><use href="#i-key"/></svg></div><h3>Role Based Access</h3><p>Granular permissions for teams of any size.</p></div>
+      <div class="feature-card reveal"><div class="feature-icon"><i class="fa-solid fa-microphone"></i></div><h3>Natural AI Conversations</h3><p>Human-like voice and chat that understands intent and context.</p></div>
+      <div class="feature-card reveal reveal-d1"><div class="feature-icon"><i class="fa-solid fa-bolt"></i></div><h3>Ultra Low Latency</h3><p>Sub-second responses that keep conversations flowing naturally.</p></div>
+      <div class="feature-card reveal reveal-d2"><div class="feature-icon"><i class="fa-solid fa-brain"></i></div><h3>Context Awareness</h3><p>Remembers the full conversation to respond with precision.</p></div>
+      <div class="feature-card reveal reveal-d3"><div class="feature-icon"><i class="fa-solid fa-globe"></i></div><h3>Multi-language Support</h3><p>Serve customers fluently in 30+ languages, automatically.</p></div>
+      <div class="feature-card reveal"><div class="feature-icon"><i class="fa-solid fa-chart-column"></i></div><h3>Real-time Analytics</h3><p>Track calls, chats, outcomes, and performance as they happen.</p></div>
+      <div class="feature-card reveal reveal-d1"><div class="feature-icon"><i class="fa-solid fa-tower-broadcast"></i></div><h3>Webhook Integration</h3><p>Push events to any system the moment they occur.</p></div>
+      <div class="feature-card reveal reveal-d2"><div class="feature-icon"><i class="fa-solid fa-book"></i></div><h3>Custom Knowledge Base</h3><p>Ground every answer in your own docs, FAQs, and policies.</p></div>
+      <div class="feature-card reveal reveal-d3"><div class="feature-icon"><i class="fa-solid fa-circle-dot"></i></div><h3>Call Recording</h3><p>Every call recorded and searchable for quality and compliance.</p></div>
+      <div class="feature-card reveal"><div class="feature-icon"><i class="fa-solid fa-clock-rotate-left"></i></div><h3>Conversation History</h3><p>Complete transcripts and timelines for every interaction.</p></div>
+      <div class="feature-card reveal reveal-d1"><div class="feature-icon"><i class="fa-solid fa-desktop"></i></div><h3>Live Dashboard</h3><p>Monitor agents, conversations, and metrics in one place.</p></div>
+      <div class="feature-card reveal reveal-d2"><div class="feature-icon"><i class="fa-solid fa-lock"></i></div><h3>Secure Cloud Deployment</h3><p>Encrypted in transit and at rest on hardened infrastructure.</p></div>
+      <div class="feature-card reveal reveal-d3"><div class="feature-icon"><i class="fa-solid fa-key"></i></div><h3>Role Based Access</h3><p>Granular permissions for teams of any size.</p></div>
     </div>
   </div>
 </section>
@@ -996,14 +954,14 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
       <p>Plug Hiloox into the tools you already use — no heavy engineering required.</p>
     </div>
     <div class="integrations-grid">
-      <div class="int-card reveal"><div class="int-icon"><svg><use href="#i-webhook"/></svg></div><span>Webhook</span></div>
-      <div class="int-card reveal reveal-d1"><div class="int-icon"><svg><use href="#i-api"/></svg></div><span>REST API</span></div>
-      <div class="int-card reveal reveal-d2"><div class="int-icon"><svg><use href="#i-db"/></svg></div><span>CRM</span></div>
-      <div class="int-card reveal reveal-d3"><div class="int-icon"><svg><use href="#i-sheet"/></svg></div><span>Google Sheets</span></div>
-      <div class="int-card reveal"><div class="int-icon"><svg><use href="#i-mail"/></svg></div><span>Email</span></div>
-      <div class="int-card reveal reveal-d1"><div class="int-icon"><svg><use href="#i-sms"/></svg></div><span>SMS</span></div>
-      <div class="int-card reveal reveal-d2"><div class="int-icon"><svg><use href="#i-calendar"/></svg></div><span>Calendar</span></div>
-      <div class="int-card reveal reveal-d3"><div class="int-icon"><svg><use href="#i-grid"/></svg></div><span>More Coming Soon</span></div>
+      <div class="int-card reveal"><div class="int-icon"><i class="fa-solid fa-tower-broadcast"></i></div><span>Webhook</span></div>
+      <div class="int-card reveal reveal-d1"><div class="int-icon"><i class="fa-solid fa-code"></i></div><span>REST API</span></div>
+      <div class="int-card reveal reveal-d2"><div class="int-icon"><i class="fa-solid fa-database"></i></div><span>CRM</span></div>
+      <div class="int-card reveal reveal-d3"><div class="int-icon"><i class="fa-solid fa-table-cells-large"></i></div><span>Google Sheets</span></div>
+      <div class="int-card reveal"><div class="int-icon"><i class="fa-solid fa-envelope"></i></div><span>Email</span></div>
+      <div class="int-card reveal reveal-d1"><div class="int-icon"><i class="fa-solid fa-comment-sms"></i></div><span>SMS</span></div>
+      <div class="int-card reveal reveal-d2"><div class="int-icon"><i class="fa-solid fa-calendar-days"></i></div><span>Calendar</span></div>
+      <div class="int-card reveal reveal-d3"><div class="int-icon"><i class="fa-solid fa-table-cells"></i></div><span>More Coming Soon</span></div>
     </div>
   </div>
 </section>
@@ -1020,21 +978,21 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
       <div class="carousel-track" id="carouselTrack">
         <div class="testimonial">
           <div class="testi-card">
-            <div class="testi-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+            <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
             <blockquote>"Our clinic used to miss dozens of calls a day. With Hiloox, every call is answered instantly and appointments book themselves. It paid for itself in the first month."</blockquote>
             <div class="testi-author"><div class="testi-av">PM</div><div><b>Priya Menon</b><span>Operations Head, BrightCare Clinics</span></div></div>
           </div>
         </div>
         <div class="testimonial">
           <div class="testi-card">
-            <div class="testi-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+            <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
             <blockquote>"The WhatsApp agent handles 80% of our support volume automatically. Response times went from hours to seconds, and our CSAT has never been higher."</blockquote>
             <div class="testi-author"><div class="testi-av">DK</div><div><b>David Koshy</b><span>Founder, UrbanKart Commerce</span></div></div>
           </div>
         </div>
         <div class="testimonial">
           <div class="testi-card">
-            <div class="testi-stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+            <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
             <blockquote>"We qualify every inbound lead the moment it arrives — even at 2 AM. Hiloox feels less like a tool and more like an extra team that never sleeps."</blockquote>
             <div class="testi-author"><div class="testi-av">SR</div><div><b>Sneha Raj</b><span>Sales Director, Vertex Realty Group</span></div></div>
           </div>
@@ -1055,35 +1013,35 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
     </div>
     <div class="pricing-grid">
       <article class="price-card reveal">
-        <div class="price-icon"><svg><use href="#i-phone"/></svg></div>
+        <div class="price-icon"><i class="fa-solid fa-phone"></i></div>
         <h3>Phone AI Agent</h3>
         <p class="price-sub">Voice AI for inbound and outbound calls.</p>
         <div class="price-custom grad-text">Custom Pricing</div>
         <p class="price-note">Tailored to your call volume and use case.</p>
         <ul class="price-list">
-          <li><svg><use href="#i-check"/></svg>Unlimited concurrent calls</li>
-          <li><svg><use href="#i-check"/></svg>Call recording &amp; summaries</li>
-          <li><svg><use href="#i-check"/></svg>CRM &amp; webhook integrations</li>
-          <li><svg><use href="#i-check"/></svg>Enterprise ready &amp; secure</li>
-          <li><svg><use href="#i-check"/></svg>Dedicated onboarding support</li>
+          <li><i class="fa-solid fa-check"></i>Unlimited concurrent calls</li>
+          <li><i class="fa-solid fa-check"></i>Call recording &amp; summaries</li>
+          <li><i class="fa-solid fa-check"></i>CRM &amp; webhook integrations</li>
+          <li><i class="fa-solid fa-check"></i>Enterprise ready &amp; secure</li>
+          <li><i class="fa-solid fa-check"></i>Dedicated onboarding support</li>
         </ul>
-        <a href="#cta" class="btn btn-primary">Contact Sales <svg><use href="#i-arrow"/></svg></a>
+        <a href="#cta" class="btn btn-primary">Contact Sales <i class="fa-solid fa-arrow-right"></i></a>
       </article>
       <article class="price-card featured reveal reveal-d2">
         <span class="price-badge">Most Popular</span>
-        <div class="price-icon"><svg><use href="#i-chat"/></svg></div>
+        <div class="price-icon"><i class="fa-solid fa-comment-dots"></i></div>
         <h3>WhatsApp AI Agent</h3>
         <p class="price-sub">Conversational AI for WhatsApp Business.</p>
         <div class="price-custom grad-text">Custom Pricing</div>
         <p class="price-note">Tailored to your conversation volume.</p>
         <ul class="price-list">
-          <li><svg><use href="#i-check"/></svg>Unlimited conversations</li>
-          <li><svg><use href="#i-check"/></svg>Rich media &amp; broadcasts</li>
-          <li><svg><use href="#i-check"/></svg>Knowledge base answers</li>
-          <li><svg><use href="#i-check"/></svg>Enterprise ready &amp; secure</li>
-          <li><svg><use href="#i-check"/></svg>Dedicated onboarding support</li>
+          <li><i class="fa-solid fa-check"></i>Unlimited conversations</li>
+          <li><i class="fa-solid fa-check"></i>Rich media &amp; broadcasts</li>
+          <li><i class="fa-solid fa-check"></i>Knowledge base answers</li>
+          <li><i class="fa-solid fa-check"></i>Enterprise ready &amp; secure</li>
+          <li><i class="fa-solid fa-check"></i>Dedicated onboarding support</li>
         </ul>
-        <a href="#cta" class="btn btn-primary">Contact Sales <svg><use href="#i-arrow"/></svg></a>
+        <a href="#cta" class="btn btn-primary">Contact Sales <i class="fa-solid fa-arrow-right"></i></a>
       </article>
     </div>
   </div>
@@ -1099,27 +1057,27 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
     </div>
     <div class="faq-list">
       <div class="faq-item reveal">
-        <button class="faq-q" aria-expanded="false">How quickly can I deploy?<svg><use href="#i-plus"/></svg></button>
+        <button class="faq-q" aria-expanded="false">How quickly can I deploy?<i class="fa-solid fa-plus"></i></button>
         <div class="faq-a"><p>Most businesses go live within minutes to a few hours. Choose your agent, add your knowledge base, connect a number or WhatsApp account, and you're live. Our team helps with onboarding for complex setups.</p></div>
       </div>
       <div class="faq-item reveal">
-        <button class="faq-q" aria-expanded="false">Can I use my own phone number?<svg><use href="#i-plus"/></svg></button>
+        <button class="faq-q" aria-expanded="false">Can I use my own phone number?<i class="fa-solid fa-plus"></i></button>
         <div class="faq-a"><p>Yes. You can port or forward your existing business number, or we can provision a new number for you in supported regions.</p></div>
       </div>
       <div class="faq-item reveal">
-        <button class="faq-q" aria-expanded="false">Does it support multiple languages?<svg><use href="#i-plus"/></svg></button>
+        <button class="faq-q" aria-expanded="false">Does it support multiple languages?<i class="fa-solid fa-plus"></i></button>
         <div class="faq-a"><p>Absolutely. Hiloox agents converse fluently in 30+ languages and can automatically detect and switch to your customer's language mid-conversation.</p></div>
       </div>
       <div class="faq-item reveal">
-        <button class="faq-q" aria-expanded="false">Can it integrate with my CRM?<svg><use href="#i-plus"/></svg></button>
+        <button class="faq-q" aria-expanded="false">Can it integrate with my CRM?<i class="fa-solid fa-plus"></i></button>
         <div class="faq-a"><p>Yes. Hiloox connects to popular CRMs and any custom system through webhooks and our REST API — leads, notes, and summaries sync automatically after every conversation.</p></div>
       </div>
       <div class="faq-item reveal">
-        <button class="faq-q" aria-expanded="false">Can I customize conversations?<svg><use href="#i-plus"/></svg></button>
+        <button class="faq-q" aria-expanded="false">Can I customize conversations?<i class="fa-solid fa-plus"></i></button>
         <div class="faq-a"><p>Fully. Control your agent's personality, tone, greeting, business rules, escalation paths, and the knowledge it draws from — all without writing code.</p></div>
       </div>
       <div class="faq-item reveal">
-        <button class="faq-q" aria-expanded="false">How secure is my data?<svg><use href="#i-plus"/></svg></button>
+        <button class="faq-q" aria-expanded="false">How secure is my data?<i class="fa-solid fa-plus"></i></button>
         <div class="faq-a"><p>Your data is encrypted in transit and at rest on secure cloud infrastructure, with role-based access controls and full conversation audit trails. We never sell or share your customer data.</p></div>
       </div>
     </div>
@@ -1132,7 +1090,7 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
     <div class="cta-banner reveal">
       <h2>Ready to Build Your AI Workforce?</h2>
       <p>Join forward-thinking businesses using Hiloox to answer every customer, capture every lead, and never miss a conversation.</p>
-      <a href="mailto:hello@hiloox.com?subject=Demo%20Request%20—%20Hiloox" class="btn btn-primary">Schedule a Demo <svg><use href="#i-arrow"/></svg></a>
+      <a href="mailto:hello@hiloox.com?subject=Demo%20Request%20—%20Hiloox" class="btn btn-primary">Schedule a Demo <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
 </section>
@@ -1148,8 +1106,8 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
         </div>
         <p>Hiloox Private Limited builds intelligent AI voice and WhatsApp agents that help businesses answer every customer, 24/7.</p>
         <div class="footer-social">
-          <a href="https://www.linkedin.com/company/hilooxhq" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
-          <a href="https://www.instagram.com/hilooxhq/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a>
+          <a href="https://www.linkedin.com/company/hilooxhq" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/hilooxhq/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
       <div class="footer-col">
@@ -1171,7 +1129,7 @@ footer{background:var(--navy);color:#CBD5E1;padding:70px 0 0}
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <a class="footer-mail" href="mailto:hello@hiloox.com"><svg><use href="#i-mail"/></svg>hello@hiloox.com</a>
+        <a class="footer-mail" href="mailto:hello@hiloox.com"><i class="fa-solid fa-envelope"></i>hello@hiloox.com</a>
         <address>
           A20/153, Joseph Avenue,<br>
           Nagercoil, Kanniyakumari,<br>
